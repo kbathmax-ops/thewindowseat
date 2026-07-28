@@ -35,23 +35,6 @@ body {
   outline-offset: 2px;
 }
 
-/* ---- intro / window animations ---- */
-
-@keyframes shade-lift {
-  from { transform: translateY(0); }
-  to { transform: translateY(-104%); }
-}
-
-@keyframes window-zoom {
-  from { transform: scale(1); border-radius: 42% / 34%; }
-  to { transform: scale(14); border-radius: 0; }
-}
-
-@keyframes fade-out {
-  from { opacity: 1; }
-  to { opacity: 0; }
-}
-
 @keyframes fade-up {
   from { opacity: 0; transform: translateY(14px); }
   to { opacity: 1; transform: translateY(0); }

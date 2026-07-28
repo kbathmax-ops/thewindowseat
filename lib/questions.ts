@@ -25,10 +25,10 @@ export const QUESTIONS: Question[] = [
     axis: "novelty",
     prompt: "It's day one in a new country. What's the ideal feeling?",
     options: [
-      { label: "Soft landing — legible, easy, familiar", value: STEPS[0] },
+      { label: "A soft landing, somewhere easy to read", value: STEPS[0] },
       { label: "Mostly familiar, with a few surprises", value: STEPS[1] },
-      { label: "Noticeably foreign — keep me curious", value: STEPS[2] },
-      { label: "Total disorientation. Rewire my brain", value: STEPS[3] },
+      { label: "Noticeably foreign, enough to stay curious", value: STEPS[2] },
+      { label: "Completely disoriented, in a good way", value: STEPS[3] },
     ],
   },
   {
@@ -47,7 +47,7 @@ export const QUESTIONS: Question[] = [
     axis: "discomfort",
     prompt: "How do you feel about being uncomfortable?",
     options: [
-      { label: "I optimize it away — comfort fuels me", value: STEPS[0] },
+      { label: "I'd rather stay comfortable and rested", value: STEPS[0] },
       { label: "A little friction is fine", value: STEPS[1] },
       { label: "Discomfort is usually where the good stuff is", value: STEPS[2] },
       { label: "If it doesn't test me, why go?", value: STEPS[3] },
@@ -58,7 +58,7 @@ export const QUESTIONS: Question[] = [
     axis: "structure",
     prompt: "Your itinerary looks like…",
     options: [
-      { label: "A blank page — I'll figure it out there", value: STEPS[0] },
+      { label: "A blank page I'll fill in when I land", value: STEPS[0] },
       { label: "A loose list of maybes", value: STEPS[1] },
       { label: "Key things booked, gaps left open", value: STEPS[2] },
       { label: "A color-coded spreadsheet, and I love it", value: STEPS[3] },
@@ -69,7 +69,7 @@ export const QUESTIONS: Question[] = [
     axis: "pace",
     prompt: "Two weeks, one country. How do you spend it?",
     options: [
-      { label: "One town — I want to be a regular by Friday", value: STEPS[0] },
+      { label: "One town, where I'm a regular by Friday", value: STEPS[0] },
       { label: "Two bases, deep roots in each", value: STEPS[1] },
       { label: "A handful of stops, moving every few days", value: STEPS[2] },
       { label: "Cover as much ground as physically possible", value: STEPS[3] },
@@ -79,10 +79,10 @@ export const QUESTIONS: Question[] = [
     kind: "theme",
     prompt: "What are you actually trying to learn right now?",
     options: [
-      { label: "Patience — how to slow down without falling behind", value: "patience" },
-      { label: "Courage — how to do the thing that scares me", value: "courage" },
-      { label: "Belonging — how to connect beyond my own bubble", value: "belonging" },
-      { label: "Self-knowledge — what I want when nobody's watching", value: "self_knowledge" },
+      { label: "Patience: how to slow down without falling behind", value: "patience" },
+      { label: "Courage: how to do the thing that scares me", value: "courage" },
+      { label: "Belonging: how to connect beyond my own bubble", value: "belonging" },
+      { label: "Self-knowledge: what I want when nobody's watching", value: "self_knowledge" },
     ],
   },
 ];

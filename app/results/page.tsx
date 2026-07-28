@@ -38,11 +38,11 @@ export default async function ResultsPage({
           <p className="mb-3 text-xs uppercase tracking-[0.3em] text-warmstone">Boarding complete</p>
           <h1 className="text-4xl font-medium sm:text-5xl">Your three countries</h1>
           <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-warmstone sm:text-base">
-            Matched to your traits — seeking{" "}
+            Matched to your answers, with extra weight on{" "}
             <span className="rounded-full bg-butter px-2.5 py-0.5 font-medium text-ink">
               {THEME_LABELS[user.growthTheme].toLowerCase()}
-            </span>{" "}
-            — from real travel essays. Every lesson links to its source.
+            </span>
+            . Each lesson links to the essay it came from.
           </p>
         </section>
 
@@ -136,8 +136,7 @@ export default async function ResultsPage({
 
         <footer className="pb-14 text-center text-xs text-warmstone">
           <p>
-            Deterministic matching — same answers, same three countries, every time. No model calls
-            at runtime.
+            The same answers always return the same three countries. No model runs at any point.
           </p>
           <Link href="/" className="mt-3 inline-block underline underline-offset-4 hover:text-ink">
             Back to the window

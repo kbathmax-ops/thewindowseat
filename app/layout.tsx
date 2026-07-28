@@ -11,7 +11,7 @@ const grotesk = Space_Grotesk({
 export const metadata: Metadata = {
   title: "The Window Seat",
   description:
-    "A six-question quiz that matches ambitious creatives, builders and founders with three countries — each chosen for the lesson it actually teaches, sourced from real travel essays.",
+    "A six-question quiz for creatives, builders and founders. It matches you with three countries, each picked for the lesson travel writers say it teaches.",
 };
 
 export const viewport: Viewport = {

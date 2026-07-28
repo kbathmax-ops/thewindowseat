@@ -102,7 +102,7 @@ export default function QuizFlow() {
         >
           ← Back
         </button>
-        <span>No model calls — your answers stay in the URL.</span>
+        <span>Your answers stay in the URL. Nothing is sent to a model.</span>
       </div>
     </div>
   );
