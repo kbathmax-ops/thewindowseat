@@ -97,7 +97,7 @@ export default function Wonders() {
   return (
     <section aria-label="The seven wonders of the world" className="border-y border-ink/10 bg-paper py-6">
       <p className="mb-4 text-center text-xs uppercase tracking-[0.3em] text-warmstone">
-        Lessons carved in stone — the seven wonders
+        The seven wonders of the world
       </p>
       <div className="overflow-hidden">
         <div className="flex w-max animate-marquee">

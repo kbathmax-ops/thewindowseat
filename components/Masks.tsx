@@ -122,8 +122,8 @@ export default function Masks() {
           Enter through the masks
         </h2>
         <p className="mx-auto mt-3 max-w-xl text-warmstone">
-          Every culture carves what it has learned into masks. Choose one — from any corner of the
-          world — to begin the quiz.
+          People everywhere carve what they know into masks. Pick one from any corner of the world
+          to start the quiz.
         </p>
       </div>
       <ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6 sm:gap-4">

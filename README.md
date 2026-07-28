@@ -1,14 +1,14 @@
 # The Window Seat
 
-A personality quiz for ambitious creatives, builders and founders. Six questions, three
-countries — each recommendation framed by the lesson that country tends to teach, sourced
-from **real first-person travel essays** across five continents.
+A personality quiz for ambitious creatives, builders and founders. You answer six
+questions and get three countries, each framed by the lesson that country tends to teach.
+The lessons come from real first-person travel essays across five continents.
 
-- **No LLM at runtime.** Matching is a deterministic trait-vector similarity computed
-  against a database built once from real writing.
-- **No fabricated sources.** Every country entry cites the essay it came from, with a
-  verifiable URL. Pull-quotes are either short verbatim fragments (≤15 words, marked
-  verbatim) or clearly-labeled paraphrases — never lifted paragraphs.
+Two rules hold throughout. No model runs at any point; matching is a deterministic
+trait-vector similarity computed against a database built once from real writing. And no
+sources are fabricated; every country entry cites the essay it came from, with a
+verifiable URL. Pull-quotes are short verbatim fragments (15 words or fewer, marked
+verbatim) or clearly labeled paraphrases.
 
 ## Stack
 

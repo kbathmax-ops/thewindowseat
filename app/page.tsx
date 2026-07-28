@@ -71,9 +71,8 @@ export default function Home() {
                 Next <span className="rounded-2xl bg-butter px-3">Lesson</span>
               </h1>
               <p className="animate-fade-up mx-auto mt-6 max-w-xl text-sm leading-relaxed text-ink/70 sm:text-base" style={{ animationDelay: "120ms" }}>
-                A six-question quiz that matches ambitious creatives, builders and founders with
-                three countries — each chosen for the lesson it actually teaches, drawn from real
-                travel essays across five continents.
+                A short quiz for creatives, builders and founders. Answer six questions and get
+                three countries, each picked for the lesson travel writers say it teaches.
               </p>
             </div>
 
@@ -86,7 +85,8 @@ export default function Home() {
 
             <div className="relative z-10 flex items-end justify-between px-6 pb-32 pt-10 sm:px-12 sm:pb-36">
               <p className="max-w-[16rem] text-xs leading-relaxed text-ink/70 sm:text-sm">
-                Every recommendation is framed by the lesson that country tends to teach.
+                Every match comes with the lesson its country tends to teach, and a link to the
+                essay behind it.
               </p>
               <p className="text-right">
                 <span className="text-4xl font-medium sm:text-5xl">{COUNTRIES.length}</span>
@@ -135,7 +135,7 @@ export default function Home() {
             <div className="mb-10 text-center">
               <p className="mb-3 text-xs uppercase tracking-[0.3em] text-warmstone">How it works</p>
               <h2 id="how-heading" className="text-3xl font-medium sm:text-4xl">
-                No model. No randomness. Just writing.
+                How the matching works
               </h2>
             </div>
             <div className="grid gap-4 sm:grid-cols-3">
@@ -143,17 +143,17 @@ export default function Home() {
                 {
                   step: "01",
                   title: "Answer six questions",
-                  body: "Each answer maps to a trait: novelty, sociality, discomfort, structure, pace — and the growth you're after.",
+                  body: "Each answer scores you on five traits: novelty, sociality, discomfort, structure and pace. The last question asks what you want to grow in.",
                 },
                 {
                   step: "02",
-                  title: "We match your vector",
-                  body: "Your traits are compared to every country's, scored by weighted similarity. Deterministic, inspectable, zero model calls.",
+                  title: "Your scores meet the database",
+                  body: "Your profile is compared with every country's. The closest three win. The math is simple similarity and it runs the same way every time, with no model involved.",
                 },
                 {
                   step: "03",
-                  title: "Three countries, three lessons",
-                  body: "Each pick carries the lesson a real essayist learned there — with the source cited and linked, always.",
+                  title: "You get three countries",
+                  body: "Each one shows the lesson a travel writer learned there, with a link to the essay it came from.",
                 },
               ].map((card) => (
                 <article key={card.step} className="rounded-card bg-paper p-7 shadow-sm">
@@ -171,9 +171,9 @@ export default function Home() {
               Every lesson traces to a real essay by a real traveler.
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-cream/60">
-              {COUNTRIES.length} countries across Africa, Asia, Europe, the Americas and Oceania —
-              each entry cites the first-person essay it came from. Nothing is generated at runtime;
-              if we couldn&apos;t find real writing about a place, it isn&apos;t in the database.
+              {COUNTRIES.length} countries across Africa, Asia, Europe, the Americas and Oceania.
+              Each entry cites the first-person essay it came from. If we couldn&apos;t find real
+              writing about a place, it isn&apos;t in the database.
             </p>
             <Link
               href="/quiz"
@@ -182,7 +182,7 @@ export default function Home() {
               Take the window seat
             </Link>
             <p className="mt-10 text-xs text-cream/40">
-              The Window Seat · sources verified July 2026 · quotes are cited or paraphrased, never lifted
+              The Window Seat · sources verified July 2026 · quotes are short and credited
             </p>
           </footer>
         </main>
