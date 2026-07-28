@@ -1,0 +1,578 @@
+[
+  {
+    "id": "japan",
+    "name": "Japan",
+    "continent": "Asia",
+    "region": "East Asia",
+    "lesson": "Care is a daily discipline",
+    "summary": "Living in Japan taught the writer patience, punctuality, and the quiet power of doing ordinary things with total care. Nobody tips — excellence is simply what everyone expects of themselves, every day.",
+    "source": {
+      "title": "7 Lessons Learned from Living in Japan",
+      "author": null,
+      "publication": "Act of Traveling",
+      "url": "https://actoftraveling.com/7-lessons-learned-from-living-in-japan/"
+    },
+    "pullQuote": "excellent service is simply always expected",
+    "pullQuoteVerbatim": true,
+    "traits": { "novelty": 0.7, "sociality": 0.45, "discomfort": 0.45, "structure": 0.95, "pace": 0.4, "growthTheme": "patience" },
+    "activities": ["Sit through a full tea ceremony in Kyoto without checking the time", "Ride the Shinkansen and watch a country run on the minute", "Walk a stretch of the Kumano Kodo pilgrimage trail in silence"]
+  },
+  {
+    "id": "india",
+    "name": "India",
+    "continent": "Asia",
+    "region": "South Asia",
+    "lesson": "Embrace the unexpected",
+    "summary": "India humbled the writer with its contrasts — comfort withheld, plans overturned, generosity everywhere. The trip is beautiful precisely because hard moments are answered by good ones, and you leave feeling stronger than you arrived.",
+    "source": {
+      "title": "Embrace the Unexpected: What My Trip to India Taught Me About Life",
+      "author": null,
+      "publication": "Intrepid Travel",
+      "url": "https://www.intrepidtravel.com/adventures/unexpected-india/"
+    },
+    "pullQuote": "The hard moments are countered by good ones — and that's what empowers you.",
+    "pullQuoteVerbatim": false,
+    "traits": { "novelty": 1.0, "sociality": 0.75, "discomfort": 0.9, "structure": 0.15, "pace": 0.7, "growthTheme": "courage" },
+    "activities": ["Take an overnight sleeper train and surrender the schedule", "Watch the evening aarti ceremony on the ghats of Varanasi", "Eat where the queue is longest, not where the menu is translated"]
+  },
+  {
+    "id": "vietnam",
+    "name": "Vietnam",
+    "continent": "Asia",
+    "region": "Southeast Asia",
+    "lesson": "Chaos has its own order",
+    "summary": "As an expat in Saigon, the writer learned that the city's overwhelming traffic and street life run on an invisible logic — thousands of people flowing as one. You stop fighting the current, step in, and trust it.",
+    "source": {
+      "title": "Living as an Expat in Vietnam: What I Learned During My Stay",
+      "author": "Sherry Ott",
+      "publication": "Ottsworld",
+      "url": "https://www.ottsworld.com/blogs/expat-vietnam-lessons-i-learned/"
+    },
+    "pullQuote": "Cross the street like the locals do: steadily, calmly, trusting the flow.",
+    "pullQuoteVerbatim": false,
+    "traits": { "novelty": 0.85, "sociality": 0.6, "discomfort": 0.65, "structure": 0.1, "pace": 0.6, "growthTheme": "courage" },
+    "activities": ["Cross a Saigon intersection at rush hour — steadily, without stopping", "Pull up a plastic stool for street-side phở at dawn", "Ride a motorbike loop through the Hà Giang mountains"]
+  },
+  {
+    "id": "thailand",
+    "name": "Thailand",
+    "continent": "Asia",
+    "region": "Southeast Asia",
+    "lesson": "Happiness is a practice, not a circumstance",
+    "summary": "Teaching abroad in Thailand showed the writer that the 'Land of Smiles' nickname is earned: people choose gratitude even in far-from-perfect situations. Discomfort shrinks when you stop treating it as an emergency.",
+    "source": {
+      "title": "8 Major Life Lessons Learned in Thailand",
+      "author": null,
+      "publication": "Greenheart Travel",
+      "url": "https://greenhearttravel.org/blog/teach-abroad-thailand/8-major-life-lessons-learned-in-thailand"
+    },
+    "pullQuote": "choose to be grateful — and in turn happy — even in far from perfect situations",
+    "pullQuoteVerbatim": true,
+    "traits": { "novelty": 0.7, "sociality": 0.7, "discomfort": 0.55, "structure": 0.3, "pace": 0.5, "growthTheme": "belonging" },
+    "activities": ["Give morning alms to monks in Chiang Mai", "Learn to cook a curry from the market up", "Live a week without air conditioning in the slow south"]
+  },
+  {
+    "id": "nepal",
+    "name": "Nepal",
+    "continent": "Asia",
+    "region": "South Asia",
+    "lesson": "Knowing when to stop matters as much as going",
+    "summary": "The Langtang trek taught its writer patience, pacing, and humility before the mountains. You start early, walk steadily, and accept that the summit is optional — coming home is not.",
+    "source": {
+      "title": "Hard Lessons from the Langtang Trek: What the Mountains Taught Me",
+      "author": null,
+      "publication": "Nepal Vision Treks",
+      "url": "https://www.nepalvisiontreks.com/blog-detail/langtang-trek-lessons"
+    },
+    "pullQuote": "knowing when to stop is as important as knowing when to go",
+    "pullQuoteVerbatim": true,
+    "traits": { "novelty": 0.8, "sociality": 0.3, "discomfort": 0.95, "structure": 0.5, "pace": 0.35, "growthTheme": "patience" },
+    "activities": ["Trek the Langtang Valley teahouse to teahouse", "Drink dal bhat twice a day and feel your pace change", "Watch sunrise hit the Himalayas from a cold stone ledge"]
+  },
+  {
+    "id": "indonesia",
+    "name": "Indonesia",
+    "continent": "Asia",
+    "region": "Southeast Asia",
+    "lesson": "Presence is the whole point",
+    "summary": "Days spent with Balinese locals left the writer with a philosophy, not photos: open your heart to real human connection, live inside the moment you're in, and treat rest as something sacred rather than earned.",
+    "source": {
+      "title": "Photo Essay of My Trip to Bali, Indonesia",
+      "author": null,
+      "publication": "Myles To Travel",
+      "url": "https://www.mylestotravel.com/photo-essay-trip-bali-indonesia/"
+    },
+    "pullQuote": "The locals' wisdom: open your heart, stay in the moment, care for yourself.",
+    "pullQuoteVerbatim": false,
+    "traits": { "novelty": 0.6, "sociality": 0.65, "discomfort": 0.35, "structure": 0.25, "pace": 0.3, "growthTheme": "self_knowledge" },
+    "activities": ["Sit through a canang sari offering being made, petal by petal", "Walk the rice terraces of Sidemen at first light", "Observe a Balinese temple ceremony as a quiet guest"]
+  },
+  {
+    "id": "mongolia",
+    "name": "Mongolia",
+    "continent": "Asia",
+    "region": "East Asia",
+    "lesson": "Let go — everything moves on",
+    "summary": "Trekking the Gobi and Altai with nomadic families, the writer learned to release the need to know what comes next. Mongolia rewards the traveler who can trust the unknown and relish the moments in between.",
+    "source": {
+      "title": "My Mongolia Travel Story: An Adventure in Letting Go",
+      "author": "Kim Merritt",
+      "publication": "WHOA Travel",
+      "url": "https://www.whoatravel.com/blog-feed/kim-merritt-mongolia-travel-story-gobi-altai"
+    },
+    "pullQuote": "The lessons you take away come from what you put in.",
+    "pullQuoteVerbatim": false,
+    "traits": { "novelty": 0.95, "sociality": 0.35, "discomfort": 0.85, "structure": 0.05, "pace": 0.55, "growthTheme": "self_knowledge" },
+    "activities": ["Sleep in a family ger on the open steppe", "Ride horseback with nomadic herders moving camp", "Stand alone in the Gobi and hear true silence"]
+  },
+  {
+    "id": "jordan",
+    "name": "Jordan",
+    "continent": "Asia",
+    "region": "Middle East",
+    "lesson": "Hospitality is an ancient technology",
+    "summary": "A week in Jordan during uncertain times taught the writer that headlines flatten places and guidebooks barely scratch them. The desert's old moral code — feed the traveler, pour the tea, ask nothing back — is still running.",
+    "source": {
+      "title": "What a Week in Jordan Taught Me About Travelling in Uncertain Times",
+      "author": null,
+      "publication": "Outlook Traveller",
+      "url": "https://www.outlooktraveller.com/destinations/international/what-a-week-in-jordan-taught-me-about-travelling-in-uncertain-times"
+    },
+    "pullQuote": "travel guides only scratch the surface",
+    "pullQuoteVerbatim": true,
+    "traits": { "novelty": 0.75, "sociality": 0.85, "discomfort": 0.5, "structure": 0.4, "pace": 0.5, "growthTheme": "belonging" },
+    "activities": ["Drink tea with Bedouin hosts in Wadi Rum", "Walk through the Siq as Petra's Treasury reveals itself", "Duck into a Madaba bakery at sunset and stay too long"]
+  },
+  {
+    "id": "morocco",
+    "name": "Morocco",
+    "continent": "Africa",
+    "region": "North Africa",
+    "lesson": "Slow down and withhold judgment",
+    "summary": "Morocco kept correcting the writer's snap judgments — about people, plans, and pace. The country runs slower and warmer than it first appears, and it rewards travelers who stop scoring it against home.",
+    "source": {
+      "title": "10 Life Lessons I Learned in Morocco I Hope to Never Forget",
+      "author": null,
+      "publication": "My Wanderlusty Life",
+      "url": "https://www.mywanderlustylife.com/what-i-learned-in-morocco/"
+    },
+    "pullQuote": "I kept judging situations unfairly — Morocco kept proving me wrong.",
+    "pullQuoteVerbatim": false,
+    "traits": { "novelty": 0.9, "sociality": 0.6, "discomfort": 0.7, "structure": 0.15, "pace": 0.5, "growthTheme": "patience" },
+    "activities": ["Get lost in the Fez medina without a map", "Take mint tea with a carpet seller and let the pitch become conversation", "Sleep under Saharan stars at a desert camp"]
+  },
+  {
+    "id": "kenya",
+    "name": "Kenya",
+    "continent": "Africa",
+    "region": "East Africa",
+    "lesson": "Emotion is a shared language",
+    "summary": "On a service trip in rural Kenya, the writer found that when spoken language and culture diverge completely, connection doesn't stop — a hand, a smile, and steady eye contact carry the conversation.",
+    "source": {
+      "title": "What a Service Trip to Kenya Taught Me About Life",
+      "author": null,
+      "publication": "JourneyWoman",
+      "url": "https://journeywoman.com/type-of-travel/multi-generational-travel/service-trip/"
+    },
+    "pullQuote": "emotions are the vocabulary that connects you",
+    "pullQuoteVerbatim": true,
+    "traits": { "novelty": 0.75, "sociality": 0.9, "discomfort": 0.6, "structure": 0.3, "pace": 0.45, "growthTheme": "belonging" },
+    "activities": ["Spend a day in a village school where you share no language", "Watch the Maasai Mara from an open vehicle at dawn", "Learn ten words of Swahili and use all of them"]
+  },
+  {
+    "id": "tanzania",
+    "name": "Tanzania",
+    "continent": "Africa",
+    "region": "East Africa",
+    "lesson": "Presence beats connectivity",
+    "summary": "A year of living in Tanzania stripped away the writer's default of constant notifications. Off the grid, the joy of being fully where you are came back — along with the realization that people everywhere share more than they differ.",
+    "source": {
+      "title": "I Lived in Tanzania for a Year… Here's What I Learned",
+      "author": null,
+      "publication": "The Pink Backpack",
+      "url": "https://www.thepinkbackpack.com/lessons-learned-in-tanzania/"
+    },
+    "pullQuote": "Disconnecting from technology brought back the joy of simply being present.",
+    "pullQuoteVerbatim": false,
+    "traits": { "novelty": 0.8, "sociality": 0.65, "discomfort": 0.7, "structure": 0.2, "pace": 0.4, "growthTheme": "self_knowledge" },
+    "activities": ["Go phoneless for a week on Zanzibar's east coast", "Learn Swahili greetings from your neighbors, badly, then better", "Camp in the Serengeti and let the animals set the schedule"]
+  },
+  {
+    "id": "south-africa",
+    "name": "South Africa",
+    "continent": "Africa",
+    "region": "Southern Africa",
+    "lesson": "There are no problems, only solutions",
+    "summary": "Travelling South Africa, the writer kept meeting what locals call the 'South Africa effect' — a relentlessly practical, improvisational way of thinking. Things break, plans wobble, and someone always finds a way.",
+    "source": {
+      "title": "Lessons I Learnt While Travelling South Africa",
+      "author": null,
+      "publication": "The Travelling Chilli",
+      "url": "https://www.thetravellingchilli.com/lessons-learnt-travelling-south-africa/"
+    },
+    "pullQuote": "no problems, only solutions",
+    "pullQuoteVerbatim": true,
+    "traits": { "novelty": 0.6, "sociality": 0.6, "discomfort": 0.5, "structure": 0.35, "pace": 0.8, "growthTheme": "courage" },
+    "activities": ["Drive the Garden Route with no fixed itinerary", "Order a braai plate and talk to whoever's tending the fire", "Hike Table Mountain and descend by whatever means available"]
+  },
+  {
+    "id": "egypt",
+    "name": "Egypt",
+    "continent": "Africa",
+    "region": "North Africa",
+    "lesson": "The plan is the first casualty — go anyway",
+    "summary": "The writer's Cairo trip was a chain of misadventures — surreal, loud, and nothing like the itinerary. It was also enlightening: the trips that go sideways are the ones that actually change you.",
+    "source": {
+      "title": "Misadventures in Egypt",
+      "author": "Albion Gould",
+      "publication": "albiongould.com",
+      "url": "https://albiongould.com/misadventures-in-egypt/"
+    },
+    "pullQuote": "An honest account of a trip that refused to go as planned.",
+    "pullQuoteVerbatim": false,
+    "traits": { "novelty": 0.9, "sociality": 0.55, "discomfort": 0.8, "structure": 0.2, "pace": 0.6, "growthTheme": "courage" },
+    "activities": ["Stand under the Great Pyramid and recalibrate your sense of time", "Haggle in the Khan el-Khalili bazaar and lose gracefully", "Sail the Nile on a felucca at dusk"]
+  },
+  {
+    "id": "ghana",
+    "name": "Ghana",
+    "continent": "Africa",
+    "region": "West Africa",
+    "lesson": "Belonging is something you give",
+    "summary": "Volunteering in Ghana, the writer learned selflessness from people who practice it as a default: help others feel they belong, share what you have, and friendship follows fast. Patience and kindness are the local operating system.",
+    "source": {
+      "title": "Lessons Learned in Ghana",
+      "author": null,
+      "publication": "Verge Magazine",
+      "url": "https://www.vergemagazine.com/volunteer-abroad/blogs/982-lessons-learned-in-ghana.html"
+    },
+    "pullQuote": "Helping someone feel they belong is the fastest way to make a friend.",
+    "pullQuoteVerbatim": false,
+    "traits": { "novelty": 0.75, "sociality": 0.95, "discomfort": 0.6, "structure": 0.2, "pace": 0.35, "growthTheme": "belonging" },
+    "activities": ["Learn to bargain in Accra's Makola Market with a smile", "Walk the canopy bridges of Kakum National Park", "Sit with the history held in Cape Coast Castle"]
+  },
+  {
+    "id": "italy",
+    "name": "Italy",
+    "continent": "Europe",
+    "region": "Southern Europe",
+    "lesson": "Doing nothing is doing something",
+    "summary": "A trip to Italy taught the writer il dolce far niente — the sweetness of doing nothing. Long meals, evening walks, and unhurried company aren't laziness; they're a deliberate way of refusing to let efficiency eat your life.",
+    "source": {
+      "title": "I Discovered the Art of Slow Living on a Trip to Italy. Here's How I'm Trying to Hold On to It at Home",
+      "author": null,
+      "publication": "VegOut Magazine",
+      "url": "https://vegoutmag.com/travel/r-i-discovered-the-art-of-slow-living-on-a-trip-to-italy-heres-how-im-trying-to-hold-on-to-it-at-home/"
+    },
+    "pullQuote": "Life is meant to be lived, not just efficiently processed.",
+    "pullQuoteVerbatim": false,
+    "traits": { "novelty": 0.3, "sociality": 0.6, "discomfort": 0.15, "structure": 0.4, "pace": 0.2, "growthTheme": "patience" },
+    "activities": ["Take the passeggiata with the whole town at golden hour", "Let lunch run three hours in a Tuscan farmhouse", "Sit in a piazza with the elderly regulars and watch the world"]
+  },
+  {
+    "id": "france",
+    "name": "France",
+    "continent": "Europe",
+    "region": "Western Europe",
+    "lesson": "Small pleasures are the point",
+    "summary": "Years of living in France taught the writer 'les petits plaisirs' — that a good baguette, a slow café, an unhurried errand are not breaks from real life but the substance of it. Nobody rushes; nothing important is lost.",
+    "source": {
+      "title": "What the French Taught Me About Enjoying Life",
+      "author": null,
+      "publication": "Oui In France",
+      "url": "https://www.ouiinfrance.com/what-the-french-taught-me-about-enjoying-life/"
+    },
+    "pullQuote": "little doses of pleasure that allow you to enjoy life to the fullest",
+    "pullQuoteVerbatim": true,
+    "traits": { "novelty": 0.35, "sociality": 0.5, "discomfort": 0.2, "structure": 0.5, "pace": 0.3, "growthTheme": "self_knowledge" },
+    "activities": ["Buy one perfect thing at a village market, daily", "Take a two-hour café terrace seat and defend it", "Walk a city until the walking becomes the destination"]
+  },
+  {
+    "id": "spain",
+    "name": "Spain",
+    "continent": "Europe",
+    "region": "Southern Europe",
+    "lesson": "Freedom reveals who you are",
+    "summary": "Moving abroad to Spain, the writer discovered a version of herself that home had buried: whimsical, at ease, reconnected to old passions. A new environment doesn't change you — it uncovers you, and treats joy as a birthright.",
+    "source": {
+      "title": "Moving Abroad to Spain Taught Me That When I'm Free, I Am Whimsical",
+      "author": null,
+      "publication": "Black Babes Abroad",
+      "url": "https://blackbabesabroad.substack.com/p/moving-abroad-to-spain-taught-me"
+    },
+    "pullQuote": "A new place can reconnect you with passions you thought you'd outgrown.",
+    "pullQuoteVerbatim": false,
+    "traits": { "novelty": 0.45, "sociality": 0.7, "discomfort": 0.3, "structure": 0.25, "pace": 0.4, "growthTheme": "self_knowledge" },
+    "activities": ["Join the paseo and dinner that starts at ten", "Take a solo morning in the Alhambra's quiet courtyards", "Say yes to the plan that forms at midnight"]
+  },
+  {
+    "id": "portugal",
+    "name": "Portugal",
+    "continent": "Europe",
+    "region": "Southern Europe",
+    "lesson": "Community is built, not found",
+    "summary": "Three years of living in Portugal taught the writer that a slower pace isn't emptiness — it's room. Room to build real community deliberately, to be a regular somewhere, and to let a place slowly claim you.",
+    "source": {
+      "title": "10 Things I've Learned Living in Portugal for 3 Years",
+      "author": "Stacy Ennis",
+      "publication": "stacyennis.com",
+      "url": "https://stacyennis.com/10thingsportugal/"
+    },
+    "pullQuote": "The slower pace makes room for the things that actually matter.",
+    "pullQuoteVerbatim": false,
+    "traits": { "novelty": 0.35, "sociality": 0.75, "discomfort": 0.25, "structure": 0.4, "pace": 0.25, "growthTheme": "belonging" },
+    "activities": ["Become a regular at one Lisbon pastelaria", "Listen to fado in a room small enough to hear breathing", "Learn the unhurried rhythm of an Algarve fishing town"]
+  },
+  {
+    "id": "greece",
+    "name": "Greece",
+    "continent": "Europe",
+    "region": "Southern Europe",
+    "lesson": "Hospitality first, hurry later",
+    "summary": "In Greece the writer met a culture that is structurally incapable of rushing a guest. Exposure to a way of life that puts hospitality and ease before schedules transformed her mindset about what a day is for.",
+    "source": {
+      "title": "Lessons Learned in Greece",
+      "author": null,
+      "publication": "Her Campus (West Chester)",
+      "url": "https://www.hercampus.com/school/west-chester/lessons-learned-in-greece/"
+    },
+    "pullQuote": "People are more relaxed — and hospitality comes before everything else.",
+    "pullQuoteVerbatim": false,
+    "traits": { "novelty": 0.4, "sociality": 0.75, "discomfort": 0.25, "structure": 0.2, "pace": 0.35, "growthTheme": "belonging" },
+    "activities": ["Accept the taverna owner's second helping — arguing is futile", "Swim before breakfast in the Aegean", "Let a ferry delay rewrite your island plans"]
+  },
+  {
+    "id": "ireland",
+    "name": "Ireland",
+    "continent": "Europe",
+    "region": "Northern Europe",
+    "lesson": "Embrace the rain",
+    "summary": "Travelling Ireland solo, the writer learned from locals who take the weather — and by extension, life — in stride. You don't wait for conditions to improve; you put on a coat, head to the pub or the cliffs, and carry on.",
+    "source": {
+      "title": "Solo Travel Ireland: 9 Interesting Lessons Learned",
+      "author": null,
+      "publication": "Solo Traveler World",
+      "url": "https://solotravelerworld.com/solo-travel-ireland/"
+    },
+    "pullQuote": "Locals take the rain in stride — so should you.",
+    "pullQuoteVerbatim": false,
+    "traits": { "novelty": 0.3, "sociality": 0.55, "discomfort": 0.35, "structure": 0.3, "pace": 0.5, "growthTheme": "patience" },
+    "activities": ["Walk the Cliffs of Moher in weather that won't cooperate", "Find the pub session and stay for the third set", "Drive the Wild Atlantic Way with no bookings"]
+  },
+  {
+    "id": "iceland",
+    "name": "Iceland",
+    "continent": "Europe",
+    "region": "Northern Europe",
+    "lesson": "You don't need to be fearless to go",
+    "summary": "Travelling Iceland alone, the writer learned that you don't need to know everything, feel brave, or even be happy the whole time for a journey to be worth it. And always go a little farther than you planned.",
+    "source": {
+      "title": "Lessons Learned Traveling Iceland Solo",
+      "author": "Julian Spina",
+      "publication": "The Outbound",
+      "url": "https://www.theoutbound.com/julian-spina-534283/lessons-learned-traveling-iceland-solo"
+    },
+    "pullQuote": "Always go a little farther than you think",
+    "pullQuoteVerbatim": true,
+    "traits": { "novelty": 0.65, "sociality": 0.15, "discomfort": 0.6, "structure": 0.45, "pace": 0.75, "growthTheme": "courage" },
+    "activities": ["Drive the Ring Road alone and pull over constantly", "Walk to the waterfall behind the waterfall", "Soak in a hot spring while the weather does its worst"]
+  },
+  {
+    "id": "mexico",
+    "name": "Mexico",
+    "continent": "North America",
+    "region": "North America",
+    "lesson": "Trust, joy and gratitude are daily practices",
+    "summary": "Living in Mexico through the pandemic, the writer learned lessons about trust, joy and gratitude from neighbors who practice all three daily. Time bends, plans flex, and the good life is shared rather than scheduled.",
+    "source": {
+      "title": "What Living in Mexico Taught Me About Trust, Joy and Gratitude During the Pandemic",
+      "author": null,
+      "publication": "JourneyWoman",
+      "url": "https://journeywoman.com/destinations/north-america/mexico/five-lessons-learned-living-in-mexico-during-the-pandemic/"
+    },
+    "pullQuote": "Mexico gave me courage to keep travelling.",
+    "pullQuoteVerbatim": false,
+    "traits": { "novelty": 0.5, "sociality": 0.7, "discomfort": 0.4, "structure": 0.2, "pace": 0.35, "growthTheme": "patience" },
+    "activities": ["Shop a mercado for lunch and let the vendors decide it", "Sit in a zócalo through an entire evening", "Celebrate whatever the town is celebrating this week"]
+  },
+  {
+    "id": "cuba",
+    "name": "Cuba",
+    "continent": "North America",
+    "region": "Caribbean",
+    "lesson": "Make the most of what you have",
+    "summary": "Nine days in Cuba taught the writer resourcefulness as a national art form: classic cars kept alive by ingenuity, music made nightly from nothing, joy that doesn't wait for abundance. Scarcity teaches what sufficiency means.",
+    "source": {
+      "title": "What Traveling to Cuba Taught Me About Life, and Making the Most of It",
+      "author": null,
+      "publication": "Intrepid Travel",
+      "url": "https://www.intrepidtravel.com/adventures/travel-cuba-life-lessons/"
+    },
+    "pullQuote": "Life here is about making the most of it.",
+    "pullQuoteVerbatim": false,
+    "traits": { "novelty": 0.7, "sociality": 0.8, "discomfort": 0.55, "structure": 0.15, "pace": 0.45, "growthTheme": "patience" },
+    "activities": ["Stay in a casa particular and eat what the family eats", "Walk Havana's Malecón at sunset with everyone else", "Find live music in Trinidad and don't sit down"]
+  },
+  {
+    "id": "peru",
+    "name": "Peru",
+    "continent": "South America",
+    "region": "Andes",
+    "lesson": "There is almost always a way through",
+    "summary": "Peru kept putting the writer in frustrating, occasionally scary situations — and kept proving that a way out exists if you stay calm and look for it. The mountains, and the people who live among them, teach quiet resilience.",
+    "source": {
+      "title": "Lessons from Peru",
+      "author": "Jillian Parker",
+      "publication": "Medium",
+      "url": "https://medium.com/@jillianparker1/lessons-from-peru-782616e037f4"
+    },
+    "pullQuote": "9.9 times out of 10, there is a way out",
+    "pullQuoteVerbatim": true,
+    "traits": { "novelty": 0.75, "sociality": 0.5, "discomfort": 0.8, "structure": 0.35, "pace": 0.6, "growthTheme": "courage" },
+    "activities": ["Hike the Salkantay route to Machu Picchu", "Acclimatize in Cusco with coca tea and patience", "Cross the Sacred Valley by colectivo and improvisation"]
+  },
+  {
+    "id": "colombia",
+    "name": "Colombia",
+    "continent": "South America",
+    "region": "Andes / Caribbean",
+    "lesson": "Warmth is a way of life",
+    "summary": "Six months of living in Colombia taught the writer two entangled lessons: buses, boats and plans run late, and the people are so warm, helpful and welcoming that the lateness stops mattering. Patience and friendliness are the same skill.",
+    "source": {
+      "title": "6 Lessons Learned From Living in Colombia for Six Months",
+      "author": "Madalyne Loree",
+      "publication": "Backroad Packers (Medium)",
+      "url": "https://backroadpackers.medium.com/6-lessons-learned-from-living-in-colombia-for-six-months-88408060decd"
+    },
+    "pullQuote": "Be okay with things not always being on time.",
+    "pullQuoteVerbatim": false,
+    "traits": { "novelty": 0.65, "sociality": 0.85, "discomfort": 0.5, "structure": 0.1, "pace": 0.5, "growthTheme": "belonging" },
+    "activities": ["Dance badly and happily in a Medellín salsa bar", "Ride a chiva bus into the coffee hills", "Learn Spanish from fruit vendors, one exotic fruit at a time"]
+  },
+  {
+    "id": "brazil",
+    "name": "Brazil",
+    "continent": "South America",
+    "region": "South America",
+    "lesson": "Don't sweat the small stuff",
+    "summary": "Living in Brazil taught the writer patience and lightness: people with less stay generous, strangers become friends over common ground, and Brazilians' ease with themselves rubs off. Most of what stresses you is small stuff.",
+    "source": {
+      "title": "Don't Sweat the Small Stuff: 7 Life Lessons I Learned Living in Brazil",
+      "author": null,
+      "publication": "Elite Daily",
+      "url": "https://www.elitedaily.com/life/culture/lessons-learned-in-brazil/1043317"
+    },
+    "pullQuote": "Brazilians taught me how to be more comfortable with myself.",
+    "pullQuoteVerbatim": false,
+    "traits": { "novelty": 0.6, "sociality": 0.9, "discomfort": 0.45, "structure": 0.1, "pace": 0.5, "growthTheme": "self_knowledge" },
+    "activities": ["Spend a beach day the Brazilian way: all day, everyone invited", "Follow live samba until late in Rio's Lapa district", "Share a churrasco with people you met an hour ago"]
+  },
+  {
+    "id": "argentina",
+    "name": "Argentina",
+    "continent": "South America",
+    "region": "Southern Cone",
+    "lesson": "Joy doesn't wait for ease",
+    "summary": "Studying abroad in Buenos Aires, the writer was reminded daily of real hardship — and of the happiness people carry anyway. Generosity is reflexive: a seat offered, mate shared, an asado invitation extended to whoever's around.",
+    "source": {
+      "title": "Studying Abroad in Buenos Aires, Argentina: Changes in Perspective",
+      "author": "Prasanna Karur",
+      "publication": "Medium",
+      "url": "https://medium.com/@pkarur/studying-abroad-in-buenos-aires-argentina-changes-in-perspective-be158116ba57"
+    },
+    "pullQuote": "They struggle, but they are happy",
+    "pullQuoteVerbatim": true,
+    "traits": { "novelty": 0.5, "sociality": 0.8, "discomfort": 0.35, "structure": 0.05, "pace": 0.4, "growthTheme": "belonging" },
+    "activities": ["Accept the asado invitation from someone you just met", "Drink mate the communal way — one gourd, everyone", "Stay out past 2am because dinner started at 11"]
+  },
+  {
+    "id": "new-zealand",
+    "name": "New Zealand",
+    "continent": "Oceania",
+    "region": "Australasia",
+    "lesson": "Nature resets your scale",
+    "summary": "Early hikes, mountain sunsets and meteor showers taught the writer what beauty without production values feels like. New Zealand's landscapes shrink your problems and enlarge your appetite for being outside in the world.",
+    "source": {
+      "title": "A Trip to New Zealand Taught Me the True Beauty of Nature",
+      "author": null,
+      "publication": "Contiki six-two",
+      "url": "https://www.contiki.com/six-two/article/new-zealand-natural-beauty/"
+    },
+    "pullQuote": "Sunset from Mount Ruapehu, meteor showers overhead — nature at full volume.",
+    "pullQuoteVerbatim": false,
+    "traits": { "novelty": 0.45, "sociality": 0.3, "discomfort": 0.45, "structure": 0.4, "pace": 0.8, "growthTheme": "self_knowledge" },
+    "activities": ["Hike the Tongariro Alpine Crossing at first light", "Swim at a black-sand beach after a long drive", "Watch a meteor shower far from any town"]
+  },
+  {
+    "id": "australia",
+    "name": "Australia",
+    "continent": "Oceania",
+    "region": "Australasia",
+    "lesson": "Silence teaches you to trust yourself",
+    "summary": "Days alone in the Australian outback stripped the writer down to essentials. In that enormous silence he learned to trust his intuition — the quiet inner signal that cities, screens and schedules usually drown out.",
+    "source": {
+      "title": "16 Massive Life Lessons I Learned in the Australian Outback",
+      "author": "Bryan Reeves",
+      "publication": "bryanreeves.com",
+      "url": "https://bryanreeves.com/16-massive-life-lessons-i-learned-in-the-australian-outback/"
+    },
+    "pullQuote": "trusting my intuition",
+    "pullQuoteVerbatim": true,
+    "traits": { "novelty": 0.55, "sociality": 0.2, "discomfort": 0.65, "structure": 0.3, "pace": 0.7, "growthTheme": "self_knowledge" },
+    "activities": ["Camp a night in the outback under the full Milky Way", "Drive a stretch of road with no service and no plan", "Watch Uluṟu change color from sunrise to dark"]
+  },
+  {
+    "id": "fiji",
+    "name": "Fiji",
+    "continent": "Oceania",
+    "region": "Pacific Islands",
+    "lesson": "Build with people, not just for them",
+    "summary": "Working on a construction project in Vuadomo village, the writer learned to step outside her comfort zone and design with the community, not at it. Fiji's lessons — community, resilience, optimism — outlasted the build.",
+    "source": {
+      "title": "What Fiji Taught Me About Sustainable Construction",
+      "author": "Isabella Spicer",
+      "publication": "Institution of Civil Engineers",
+      "url": "https://www.ice.org.uk/news-views-insights/inside-infrastructure/isabella-spicer-quest-travel-to-fiji-lessons"
+    },
+    "pullQuote": "community, resilience, and optimism",
+    "pullQuoteVerbatim": true,
+    "traits": { "novelty": 0.6, "sociality": 0.9, "discomfort": 0.55, "structure": 0.3, "pace": 0.25, "growthTheme": "belonging" },
+    "activities": ["Join a kava ceremony and follow the village's lead", "Stay in a homestay, not a resort", "Help with whatever the village is building that week"]
+  },
+  {
+    "id": "vanuatu",
+    "name": "Vanuatu",
+    "continent": "Oceania",
+    "region": "Pacific Islands",
+    "lesson": "Enough is abundant",
+    "summary": "Six weeks in a remote Vanuatu village showed the writer people with little money and no interest in more of it — content, proud, warm and unhurried. It permanently changed his perspective on life, work and community.",
+    "source": {
+      "title": "Life Lessons from a Remote Paradise: Six Weeks in Vanuatu Village",
+      "author": "Stevo Perry",
+      "publication": "Medium",
+      "url": "https://stevenperryau.medium.com/life-lessons-from-a-remote-paradise-six-weeks-in-vanuatu-village-41d717704593"
+    },
+    "pullQuote": "more than content with what they had — and proud of it",
+    "pullQuoteVerbatim": true,
+    "traits": { "novelty": 0.85, "sociality": 0.7, "discomfort": 0.75, "structure": 0.1, "pace": 0.2, "growthTheme": "patience" },
+    "activities": ["Live a week on island time in a village guesthouse", "Learn to fish the way your hosts' grandparents did", "Watch the Yasur volcano glow from the ash plain"]
+  },
+  {
+    "id": "papua-new-guinea",
+    "name": "Papua New Guinea",
+    "continent": "Oceania",
+    "region": "Melanesia",
+    "lesson": "Comfort doesn't create growth — courage does",
+    "summary": "Remote, raw and humbling, Papua New Guinea was the writer's masterclass in courage. Doing hard things in a place with no cushions taught her that growth lives entirely on the far side of comfort.",
+    "source": {
+      "title": "Courage Over Comfort: What Papua New Guinea Taught Me About Doing Hard Things",
+      "author": "Laura Beauparlant",
+      "publication": "laurabeauparlant.com",
+      "url": "https://www.laurabeauparlant.com/blog/courage-over-comfort-what-papua-new-guinea-taught-me-about-doing-hard-things"
+    },
+    "pullQuote": "a masterclass in courage",
+    "pullQuoteVerbatim": true,
+    "traits": { "novelty": 1.0, "sociality": 0.5, "discomfort": 1.0, "structure": 0.15, "pace": 0.45, "growthTheme": "courage" },
+    "activities": ["Trek to a highlands village reachable only on foot", "Attend a sing-sing gathering of highland clans", "Travel by banana boat between coastal villages"]
+  }
+]

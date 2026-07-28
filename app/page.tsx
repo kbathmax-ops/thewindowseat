@@ -1,0 +1,192 @@
+import Link from "next/link";
+import PlaneIntro from "@/components/PlaneIntro";
+import Masks from "@/components/Masks";
+import Wonders from "@/components/Wonders";
+import { COUNTRIES } from "@/lib/data";
+
+function Logo() {
+  return (
+    <Link href="/" className="flex items-center gap-2 text-sm font-medium">
+      <span
+        aria-hidden="true"
+        className="inline-block h-5 w-3.5 rounded-[45%/34%] border-2 border-ink bg-butter"
+      />
+      The Window Seat
+    </Link>
+  );
+}
+
+function Chip({ children, className = "" }: { children: React.ReactNode; className?: string }) {
+  return (
+    <span
+      className={`inline-flex items-center gap-2 rounded-full border border-butter-deep/70 bg-paper/90 px-4 py-2 text-xs font-medium shadow-sm backdrop-blur sm:text-sm ${className}`}
+    >
+      <span aria-hidden="true" className="inline-block h-2 w-2 rotate-45 bg-butter-deep" />
+      {children}
+    </span>
+  );
+}
+
+export default function Home() {
+  return (
+    <>
+      <PlaneIntro />
+      <div className="p-3 sm:p-5">
+        <main className="mx-auto max-w-7xl">
+          {/* hero — framed like a cabin window onto a landscape */}
+          <section className="relative overflow-hidden rounded-frame border-[6px] border-paper bg-gradient-to-b from-haze via-[#c3cbc2] to-[#e3c98f] shadow-xl sm:border-[10px]">
+            {/* distant mountains */}
+            <svg
+              className="absolute bottom-0 left-0 h-3/5 w-full text-[#7d8f94]"
+              viewBox="0 0 1200 400"
+              preserveAspectRatio="none"
+              aria-hidden="true"
+            >
+              <path fill="currentColor" opacity="0.5" d="M0 400 L0 260 L140 150 L260 250 L390 120 L520 260 L640 170 L760 280 L900 100 L1040 240 L1200 160 L1200 400 Z" />
+              <path fill="#5f7176" opacity="0.55" d="M0 400 L0 320 L180 220 L330 320 L480 210 L650 330 L820 230 L980 330 L1120 260 L1200 300 L1200 400 Z" />
+              <path fill="#d9b273" opacity="0.9" d="M0 400 L0 360 Q300 330 600 356 Q900 380 1200 350 L1200 400 Z" />
+            </svg>
+
+            {/* header */}
+            <header className="relative z-10 flex items-center justify-between px-5 py-5 sm:px-10">
+              <Logo />
+              <nav className="hidden items-center gap-8 text-sm text-ink/70 md:flex" aria-label="Primary">
+                <a href="#masks" className="transition-colors hover:text-ink">Masks</a>
+                <a href="#how" className="transition-colors hover:text-ink">How it works</a>
+                <a href="#sources" className="transition-colors hover:text-ink">Sources</a>
+              </nav>
+              <Link
+                href="/quiz"
+                className="rounded-full bg-butter px-5 py-2.5 text-sm font-medium transition-transform hover:scale-[1.03]"
+              >
+                Take the quiz
+              </Link>
+            </header>
+
+            {/* headline */}
+            <div className="relative z-10 mx-auto max-w-3xl px-6 pt-10 text-center sm:pt-16">
+              <h1 className="animate-fade-up text-5xl font-medium leading-[1.02] tracking-tight sm:text-7xl">
+                Find Your
+                <br />
+                Next <span className="rounded-2xl bg-butter px-3">Lesson</span>
+              </h1>
+              <p className="animate-fade-up mx-auto mt-6 max-w-xl text-sm leading-relaxed text-ink/70 sm:text-base" style={{ animationDelay: "120ms" }}>
+                A six-question quiz that matches ambitious creatives, builders and founders with
+                three countries — each chosen for the lesson it actually teaches, drawn from real
+                travel essays across five continents.
+              </p>
+            </div>
+
+            {/* floating chips + stat */}
+            <div className="relative z-10 mx-auto mt-10 flex max-w-4xl flex-wrap items-center justify-center gap-3 px-6 sm:mt-14">
+              <Chip className="animate-drift">{COUNTRIES.length} sourced essays</Chip>
+              <Chip className="animate-drift [animation-delay:600ms]">5 continents</Chip>
+              <Chip className="animate-drift [animation-delay:1200ms]">Zero AI at runtime</Chip>
+            </div>
+
+            <div className="relative z-10 flex items-end justify-between px-6 pb-32 pt-10 sm:px-12 sm:pb-36">
+              <p className="max-w-[16rem] text-xs leading-relaxed text-ink/70 sm:text-sm">
+                Every recommendation is framed by the lesson that country tends to teach.
+              </p>
+              <p className="text-right">
+                <span className="text-4xl font-medium sm:text-5xl">{COUNTRIES.length}</span>
+                <span className="block text-xs text-ink/70 sm:text-sm">
+                  real essays, five continents
+                </span>
+              </p>
+            </div>
+
+            {/* booking-style quiz bar */}
+            <div className="absolute inset-x-3 bottom-3 z-20 sm:inset-x-10 sm:bottom-6">
+              <div className="flex flex-col items-stretch gap-3 rounded-[1.9rem] bg-paper p-3 shadow-lg sm:flex-row sm:items-center sm:gap-0 sm:rounded-full sm:p-2.5">
+                {[
+                  ["Questions", "6, one at a time"],
+                  ["Time", "About 2 minutes"],
+                  ["Results", "3 countries + sources"],
+                ].map(([label, value], i) => (
+                  <div
+                    key={label}
+                    className={`flex-1 px-4 py-1.5 sm:py-1 ${i > 0 ? "sm:border-l sm:border-ink/10" : ""}`}
+                  >
+                    <p className="text-[11px] uppercase tracking-wider text-warmstone">{label}</p>
+                    <p className="text-sm font-medium">{value}</p>
+                  </div>
+                ))}
+                <Link
+                  href="/quiz"
+                  className="rounded-full bg-butter px-7 py-3.5 text-center text-sm font-medium transition-transform hover:scale-[1.02] sm:ml-2"
+                >
+                  Find my three countries
+                </Link>
+              </div>
+            </div>
+          </section>
+
+          {/* masks gateway */}
+          <div id="masks">
+            <Masks />
+          </div>
+
+          {/* seven wonders band */}
+          <Wonders />
+
+          {/* how it works */}
+          <section id="how" aria-labelledby="how-heading" className="mx-auto max-w-6xl px-4 py-16 sm:py-24">
+            <div className="mb-10 text-center">
+              <p className="mb-3 text-xs uppercase tracking-[0.3em] text-warmstone">How it works</p>
+              <h2 id="how-heading" className="text-3xl font-medium sm:text-4xl">
+                No model. No randomness. Just writing.
+              </h2>
+            </div>
+            <div className="grid gap-4 sm:grid-cols-3">
+              {[
+                {
+                  step: "01",
+                  title: "Answer six questions",
+                  body: "Each answer maps to a trait: novelty, sociality, discomfort, structure, pace — and the growth you're after.",
+                },
+                {
+                  step: "02",
+                  title: "We match your vector",
+                  body: "Your traits are compared to every country's, scored by weighted similarity. Deterministic, inspectable, zero model calls.",
+                },
+                {
+                  step: "03",
+                  title: "Three countries, three lessons",
+                  body: "Each pick carries the lesson a real essayist learned there — with the source cited and linked, always.",
+                },
+              ].map((card) => (
+                <article key={card.step} className="rounded-card bg-paper p-7 shadow-sm">
+                  <p className="mb-4 inline-block rounded-full bg-butter px-3 py-1 text-xs font-medium">{card.step}</p>
+                  <h3 className="mb-2 text-lg font-medium">{card.title}</h3>
+                  <p className="text-sm leading-relaxed text-warmstone">{card.body}</p>
+                </article>
+              ))}
+            </div>
+          </section>
+
+          {/* sources note / footer */}
+          <footer id="sources" className="rounded-frame bg-ink px-6 py-14 text-center text-cream sm:px-12">
+            <h2 className="mx-auto max-w-2xl text-2xl font-medium sm:text-3xl">
+              Every lesson traces to a real essay by a real traveler.
+            </h2>
+            <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-cream/60">
+              {COUNTRIES.length} countries across Africa, Asia, Europe, the Americas and Oceania —
+              each entry cites the first-person essay it came from. Nothing is generated at runtime;
+              if we couldn&apos;t find real writing about a place, it isn&apos;t in the database.
+            </p>
+            <Link
+              href="/quiz"
+              className="mt-8 inline-block rounded-full bg-butter px-8 py-3.5 text-sm font-medium text-ink transition-transform hover:scale-[1.03]"
+            >
+              Take the window seat
+            </Link>
+            <p className="mt-10 text-xs text-cream/40">
+              The Window Seat · sources verified July 2026 · quotes are cited or paraphrased, never lifted
+            </p>
+          </footer>
+        </main>
+      </div>
+    </>
+  );
+}
