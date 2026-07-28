@@ -1,10 +1,17 @@
 import type { Metadata, Viewport } from "next";
-import { Space_Grotesk } from "next/font/google";
+import { Playfair_Display, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
 const grotesk = Space_Grotesk({
   subsets: ["latin"],
   variable: "--font-grotesk",
+  display: "swap",
+});
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+  style: ["normal", "italic"],
   display: "swap",
 });
 
@@ -20,7 +27,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={grotesk.variable}>
+    <html lang="en" className={`${grotesk.variable} ${playfair.variable}`}>
       <body>{children}</body>
     </html>
   );

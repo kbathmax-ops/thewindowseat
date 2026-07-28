@@ -63,14 +63,27 @@ export default function Home() {
               </Link>
             </header>
 
-            {/* headline */}
+            {/* headline — the intro's type lands here and stays */}
             <div className="relative z-10 mx-auto max-w-3xl px-6 pt-10 text-center sm:pt-16">
-              <h1 className="animate-fade-up text-5xl font-medium leading-[1.02] tracking-tight sm:text-7xl">
-                Find Your
-                <br />
-                Next <span className="rounded-2xl bg-butter px-3">Lesson</span>
+              <h1 className="animate-fade-up font-serif text-[clamp(2.75rem,9vw,6rem)] font-normal leading-[0.94] tracking-[-0.02em]">
+                The Window <em className="italic">Seat</em>
               </h1>
-              <p className="animate-fade-up mx-auto mt-6 max-w-xl text-sm leading-relaxed text-ink/70 sm:text-base" style={{ animationDelay: "120ms" }}>
+              <p
+                className="animate-fade-up mt-5 font-serif text-lg italic text-ink/80 sm:text-2xl"
+                style={{ animationDelay: "120ms" }}
+              >
+                Be a traveller, not a tourist.
+              </p>
+              <p
+                className="animate-fade-up mx-auto mt-4 max-w-lg text-xs leading-relaxed tracking-wide text-ink/60 sm:text-sm"
+                style={{ animationDelay: "220ms" }}
+              >
+                Created with stories by Marco Polo, Anthony Bourdain, and Xuanzang.
+              </p>
+              <p
+                className="animate-fade-up mx-auto mt-6 max-w-xl text-sm leading-relaxed text-ink/70 sm:text-base"
+                style={{ animationDelay: "320ms" }}
+              >
                 A short quiz for creatives, builders and founders. Answer six questions and get
                 three countries, each picked for the lesson travel writers say it teaches.
               </p>

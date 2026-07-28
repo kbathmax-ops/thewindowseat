@@ -203,24 +203,42 @@ export default function PlaneIntro() {
         aria-hidden="true"
       />
 
-      {/* copy and controls */}
+      {/* centred serif title, the takeoff cue, and the credit lines */}
       <div
-        className={`absolute inset-x-0 bottom-0 flex flex-col items-center gap-4 px-6 pb-12 text-center transition-opacity duration-400 ${
-          zooming ? "opacity-0" : "opacity-100"
+        className={`absolute inset-0 z-20 flex flex-col items-center justify-center px-6 text-center transition-all duration-500 ${
+          zooming ? "-translate-y-6 scale-[1.06] opacity-0" : "translate-y-0 scale-100 opacity-100"
         }`}
       >
-        <p className="text-xs uppercase tracking-[0.35em] text-[#c9b98f]">Now boarding</p>
-        <h1 className="text-4xl font-medium text-cream sm:text-5xl">The Window Seat</h1>
-        <p className="max-w-md text-sm leading-relaxed text-[#b7ac93]">
-          A short quiz that matches you with three countries, using lessons from real travel
-          essays.
-        </p>
+        <h1
+          className="animate-rise font-serif text-[clamp(3rem,11vw,7.5rem)] font-normal leading-[0.94] tracking-[-0.02em] text-cream"
+          style={{ textShadow: "0 8px 40px rgba(0,0,0,0.55)" }}
+        >
+          The Window
+          <br />
+          <em className="italic">Seat</em>
+        </h1>
+
         <button
           onClick={board}
-          className="rounded-full bg-butter px-8 py-3.5 text-sm font-medium text-ink transition-transform hover:scale-[1.03] active:scale-[0.98]"
+          className="animate-rise group mt-8 font-serif text-2xl italic text-[#f0c886] transition-colors hover:text-cream sm:text-3xl"
+          style={{ animationDelay: "700ms" }}
         >
-          Take the window seat
+          Take off
+          <span className="mx-auto mt-1.5 block h-px w-full origin-center scale-x-100 bg-[#f0c886]/60 transition-transform duration-500 group-hover:scale-x-0" />
         </button>
+
+        <p
+          className="animate-rise mt-10 max-w-lg text-xs leading-relaxed tracking-wide text-[#b7ac93] sm:text-sm"
+          style={{ animationDelay: "1100ms" }}
+        >
+          Created with stories by Marco Polo, Anthony Bourdain, and Xuanzang.
+        </p>
+        <p
+          className="animate-rise mt-2 font-serif text-base italic text-[#d6c8a6] sm:text-lg"
+          style={{ animationDelay: "1400ms" }}
+        >
+          Be a traveller, not a tourist.
+        </p>
       </div>
 
       <button
