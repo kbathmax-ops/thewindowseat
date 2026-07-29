@@ -52,7 +52,6 @@ export default function Home() {
               <Logo />
               <nav className="hidden items-center gap-8 text-sm text-ink/70 md:flex" aria-label="Primary">
                 <a href="#masks" className="transition-colors hover:text-ink">Masks</a>
-                <a href="#how" className="transition-colors hover:text-ink">How it works</a>
                 <a href="#sources" className="transition-colors hover:text-ink">Sources</a>
               </nav>
               <Link
@@ -65,17 +64,17 @@ export default function Home() {
 
             {/* headline — the intro's type lands here and stays */}
             <div className="relative z-10 mx-auto max-w-3xl px-6 pt-10 text-center sm:pt-16">
-              <h1 className="animate-fade-up font-serif text-[clamp(2.75rem,9vw,6rem)] font-normal leading-[0.94] tracking-[-0.02em]">
-                The Window <em className="italic">Seat</em>
+              <h1 className="animate-fade-up font-serif text-[clamp(2.75rem,9vw,6rem)] font-medium leading-[0.94] tracking-[-0.02em]">
+                The Window Seat
               </h1>
               <p
-                className="animate-fade-up mt-5 font-serif text-lg italic text-ink/80 sm:text-2xl"
+                className="animate-fade-up mt-5 font-serif text-lg text-ink/80 sm:text-2xl"
                 style={{ animationDelay: "120ms" }}
               >
                 Be a traveller, not a tourist.
               </p>
               <p
-                className="animate-fade-up mx-auto mt-4 max-w-lg text-xs leading-relaxed tracking-wide text-ink/60 sm:text-sm"
+                className="animate-fade-up mx-auto mt-4 max-w-2xl font-serif text-sm leading-relaxed tracking-wide text-ink/60 sm:text-base"
                 style={{ animationDelay: "220ms" }}
               >
                 Created with stories by Marco Polo, Anthony Bourdain, and Xuanzang.
@@ -143,44 +142,9 @@ export default function Home() {
           {/* seven wonders band */}
           <Wonders />
 
-          {/* how it works */}
-          <section id="how" aria-labelledby="how-heading" className="mx-auto max-w-6xl px-4 py-16 sm:py-24">
-            <div className="mb-10 text-center">
-              <p className="mb-3 text-xs uppercase tracking-[0.3em] text-warmstone">How it works</p>
-              <h2 id="how-heading" className="text-3xl font-medium sm:text-4xl">
-                How the matching works
-              </h2>
-            </div>
-            <div className="grid gap-4 sm:grid-cols-3">
-              {[
-                {
-                  step: "01",
-                  title: "Answer six questions",
-                  body: "Each answer scores you on five traits: novelty, sociality, discomfort, structure and pace. The last question asks what you want to grow in.",
-                },
-                {
-                  step: "02",
-                  title: "Your scores meet the database",
-                  body: "Your profile is compared with every country's. The closest three win. The math is simple similarity and it runs the same way every time, with no model involved.",
-                },
-                {
-                  step: "03",
-                  title: "You get three countries",
-                  body: "Each one shows the lesson a travel writer learned there, with a link to the essay it came from.",
-                },
-              ].map((card) => (
-                <article key={card.step} className="rounded-card bg-paper p-7 shadow-sm">
-                  <p className="mb-4 inline-block rounded-full bg-butter px-3 py-1 text-xs font-medium">{card.step}</p>
-                  <h3 className="mb-2 text-lg font-medium">{card.title}</h3>
-                  <p className="text-sm leading-relaxed text-warmstone">{card.body}</p>
-                </article>
-              ))}
-            </div>
-          </section>
-
           {/* sources note / footer */}
-          <footer id="sources" className="rounded-frame bg-ink px-6 py-14 text-center text-cream sm:px-12">
-            <h2 className="mx-auto max-w-2xl text-2xl font-medium sm:text-3xl">
+          <footer id="sources" className="mt-16 rounded-frame bg-ink px-6 py-14 text-center text-cream sm:mt-24 sm:px-12">
+            <h2 className="mx-auto max-w-2xl font-serif text-2xl font-medium sm:text-3xl">
               Every lesson traces to a real essay by a real traveler.
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-cream/60">
