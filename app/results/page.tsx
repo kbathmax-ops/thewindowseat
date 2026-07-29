@@ -36,7 +36,7 @@ export default async function ResultsPage({
 
         <section className="px-2 py-10 text-center sm:py-14">
           <p className="mb-3 text-xs uppercase tracking-[0.3em] text-warmstone">Boarding complete</p>
-          <h1 className="text-4xl font-medium sm:text-5xl">Your three countries</h1>
+          <h1 className="font-serif text-4xl font-medium sm:text-5xl">Your three countries</h1>
           <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-warmstone sm:text-base">
             Matched to your answers, with extra weight on{" "}
             <span className="rounded-full bg-butter px-2.5 py-0.5 font-medium text-ink">
@@ -70,7 +70,7 @@ export default async function ResultsPage({
                 </div>
 
                 <div className="px-6 py-8 sm:px-9">
-                  <h2 className="text-3xl font-medium sm:text-4xl">{c.name}</h2>
+                  <h2 className="font-serif text-3xl font-medium sm:text-4xl">{c.name}</h2>
                   <p className="mt-3 text-xl leading-snug sm:text-2xl">
                     <span className="bg-butter px-1.5">{c.lesson}</span>
                   </p>
