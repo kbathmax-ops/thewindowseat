@@ -5,13 +5,25 @@ import { useEffect, useRef, useState } from "react";
 import { MASK_ATLAS, TRAVELLERS, type MaskEntry } from "@/lib/masks";
 
 /**
- * The map is equirectangular at a true 2:1 — a full 180°W–180°E by 90°N–90°S on
- * Greenwich — so both axes are linear and no projection maths is needed.
+ * The map is a Mercator wall chart centred near 17°E and cropped top and bottom,
+ * so it covers roughly 164°W–199°E and 85°N–61°S — Antarctica is off the sheet.
+ * It carries no graticule, so these constants were fitted to ten labelled
+ * landmarks: longitude against Alaska, Mexico, Brazil, Saudi Arabia, Mongolia
+ * and New Zealand; latitude against Iceland, North Cape, Cape Agulhas and Cape
+ * Horn. All positions are percentages of the image.
  */
+const PRIME_MERIDIAN_X = 45.3;
+const PERCENT_PER_DEGREE_LON = 0.2755;
+const EQUATOR_Y = 70.05;
+const MERCATOR_SCALE = 22.11;
+
+/** Mercator's y, in the projection's own units. */
+const project = (deg: number) => Math.log(Math.tan(Math.PI / 4 + (deg * Math.PI) / 360));
+
 function position(entry: MaskEntry) {
   return {
-    left: `${((entry.lon + 180) / 360) * 100}%`,
-    top: `${((90 - entry.lat) / 180) * 100}%`,
+    left: `${PRIME_MERIDIAN_X + entry.lon * PERCENT_PER_DEGREE_LON}%`,
+    top: `${EQUATOR_Y - project(entry.lat) * MERCATOR_SCALE}%`,
   };
 }
 
@@ -68,10 +80,10 @@ export default function MaskAtlas() {
             transition: "transform 1.5s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.8s ease",
           }}
         >
-          <div className="relative aspect-[2/1] w-full">
+          <div className="relative aspect-[1920/1280] w-full">
             <Image
-              src="/map/world-2026.png"
-              alt="A present-day political map of the world"
+              src="/map/world-vintage.jpg"
+              alt="A vintage-styled physical map of the world"
               fill
               sizes="(max-width: 768px) 100vw, 1100px"
               className="object-cover"

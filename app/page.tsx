@@ -165,16 +165,7 @@ export default function Home() {
                   ({credit.license})
                 </span>
               ))}
-              . Map:{" "}
-              <a
-                href={MAP_CREDIT.sourceUrl}
-                className="underline decoration-cream/20 underline-offset-2 transition-colors hover:text-cream/60"
-                target="_blank"
-                rel="noreferrer"
-              >
-                {MAP_CREDIT.title.replace(/^File:|\.svg$/g, "")}
-              </a>{" "}
-              ({MAP_CREDIT.license.toLowerCase()}).
+              . Map: {MAP_CREDIT.title}, {MAP_CREDIT.author.toLowerCase()}.
             </p>
           </footer>
         </main>
