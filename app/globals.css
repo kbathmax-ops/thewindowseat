@@ -13,6 +13,7 @@
   --color-cabin: #241d14;
 
   --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-display: var(--font-entuista), "Helvetica Neue", Helvetica, sans-serif;
 
   --radius-frame: 2.5rem;
   --radius-card: 1.75rem;
