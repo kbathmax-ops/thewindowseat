@@ -84,3 +84,17 @@ body {
     animation: none;
   }
 }
+
+/* a mask jostles on its pin when you point at it */
+@keyframes shake {
+  0%, 100% { transform: rotate(0deg); }
+  15% { transform: rotate(-7deg); }
+  30% { transform: rotate(6deg); }
+  45% { transform: rotate(-5deg); }
+  60% { transform: rotate(4deg); }
+  80% { transform: rotate(-2deg); }
+}
+
+.animate-shake {
+  animation: shake 0.55s ease-in-out infinite;
+}

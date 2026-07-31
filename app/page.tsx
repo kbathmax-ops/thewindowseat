@@ -3,8 +3,11 @@ import PlaneIntro from "@/components/PlaneIntro";
 import Masks from "@/components/Masks";
 import Wonders from "@/components/Wonders";
 import ExperienceArc, { ExperienceStrip } from "@/components/ExperienceArc";
+import MaskAtlas from "@/components/MaskAtlas";
 import { COUNTRIES } from "@/lib/data";
 import { PHOTO_CREDITS } from "@/lib/experiences";
+import MASK_CREDITS from "@/public/masks/credits.json";
+import MAP_CREDIT from "@/public/map/credits.json";
 
 function Logo() {
   return (
@@ -105,6 +108,9 @@ export default function Home() {
             <Masks />
           </div>
 
+          {/* the mask atlas */}
+          <MaskAtlas />
+
           {/* seven wonders band */}
           <Wonders />
 
@@ -145,6 +151,34 @@ export default function Home() {
                   ({credit.license})
                 </span>
               ))}
+            </p>
+
+            <p className="mx-auto mt-3 max-w-3xl text-[0.65rem] leading-relaxed text-cream/30">
+              Atlas masks, likewise:{" "}
+              {MASK_CREDITS.map((credit, i) => (
+                <span key={credit.file}>
+                  {i > 0 && " · "}
+                  <a
+                    href={credit.sourceUrl}
+                    className="underline decoration-cream/20 underline-offset-2 transition-colors hover:text-cream/60"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {credit.author}
+                  </a>{" "}
+                  ({credit.license})
+                </span>
+              ))}
+              . Map:{" "}
+              <a
+                href={MAP_CREDIT.sourceUrl}
+                className="underline decoration-cream/20 underline-offset-2 transition-colors hover:text-cream/60"
+                target="_blank"
+                rel="noreferrer"
+              >
+                John Cary, A New Chart of the World, 1801
+              </a>{" "}
+              (public domain).
             </p>
           </footer>
         </main>
