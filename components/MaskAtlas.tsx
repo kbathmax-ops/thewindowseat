@@ -5,26 +5,19 @@ import { useEffect, useRef, useState } from "react";
 import { MASK_ATLAS, TRAVELLERS, type MaskEntry } from "@/lib/masks";
 
 /**
- * Cary's 1801 chart is drawn on Mercator's projection, spans a full 180°W–180°E
- * on Greenwich, and carries its own graticule in the margins. These constants
- * were read off that graticule in the 2000x1780 scan — the prime meridian and
- * equator in pixels, and the Mercator scale fitted to the printed parallels,
- * which lands within a pixel at both 60°N and 20°N.
+ * A current political world map on the equirectangular projection, which is
+ * linear in both axes — a coordinate converts straight to a percentage with
+ * nothing to calibrate. The scan keeps the full 180°W–180°E but is cropped to
+ * the latitude band below, since the empty Arctic and Antarctic held no pins.
  */
-const MAP_W = 2000;
-const MAP_H = 1780;
-const PRIME_MERIDIAN_X = 1002;
-const EQUATOR_Y = 968;
-const PX_PER_DEGREE_LON = 5.1;
-const MERCATOR_SCALE = 295.5;
-
-/** Mercator's y, in the projection's own units. */
-const project = (deg: number) => Math.log(Math.tan(Math.PI / 4 + (deg * Math.PI) / 360));
+const LAT_TOP = 72;
+const LAT_BOTTOM = -60;
 
 function position(entry: MaskEntry) {
-  const x = PRIME_MERIDIAN_X + entry.lon * PX_PER_DEGREE_LON;
-  const y = EQUATOR_Y - project(entry.lat) * MERCATOR_SCALE;
-  return { left: `${(x / MAP_W) * 100}%`, top: `${(y / MAP_H) * 100}%` };
+  return {
+    left: `${((entry.lon + 180) / 360) * 100}%`,
+    top: `${((LAT_TOP - entry.lat) / (LAT_TOP - LAT_BOTTOM)) * 100}%`,
+  };
 }
 
 export default function MaskAtlas() {
@@ -56,7 +49,7 @@ export default function MaskAtlas() {
   const active = MASK_ATLAS.find((m) => m.slug === open) ?? null;
 
   return (
-    <section aria-labelledby="atlas-heading" className="mx-auto max-w-6xl px-4 py-16 sm:py-24">
+    <section id="atlas" aria-labelledby="atlas-heading" className="mx-auto max-w-6xl px-4 py-16 sm:py-24">
       <div className="mb-10 text-center">
         <p className="mb-3 text-xs uppercase tracking-[0.3em] text-warmstone">The atlas</p>
         <h2 id="atlas-heading" className="text-3xl font-medium sm:text-4xl">
@@ -80,13 +73,14 @@ export default function MaskAtlas() {
             transition: "transform 1.5s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.8s ease",
           }}
         >
-          <div className="relative aspect-[2000/1780] w-full">
+          <div className="relative aspect-[2400/880] w-full bg-[#dbe9f4]">
             <Image
-              src="/map/world-1801.jpg"
-              alt="John Cary's 1801 map of the world on Mercator's projection"
+              src="/map/world-2026.png"
+              alt="A world map on the equirectangular projection with current borders"
               fill
               sizes="(max-width: 768px) 100vw, 1100px"
               className="object-cover"
+              style={{ filter: "saturate(0.6) sepia(0.14)" }}
             />
 
             {/* the pins */}
