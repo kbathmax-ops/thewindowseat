@@ -1,13 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
-
-const editorial = localFont({
-  src: "./fonts/EditorialNew-Medium.woff2",
-  weight: "500",
-  variable: "--font-editorial",
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "The Window Seat",
@@ -21,7 +13,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={editorial.variable}>
+    <html lang="en">
       <body>{children}</body>
     </html>
   );

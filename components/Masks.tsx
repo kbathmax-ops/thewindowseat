@@ -118,7 +118,7 @@ export default function Masks() {
     <section aria-labelledby="masks-heading" className="mx-auto max-w-6xl px-4 py-16 sm:py-24">
       <div className="mb-10 text-center">
         <p className="mb-3 text-xs uppercase tracking-[0.3em] text-warmstone">Enter the app</p>
-        <h2 id="masks-heading" className="font-serif text-3xl font-medium sm:text-4xl">
+        <h2 id="masks-heading" className="text-3xl font-medium sm:text-4xl">
           Enter through the masks
         </h2>
         <p className="mx-auto mt-3 max-w-xl text-warmstone">

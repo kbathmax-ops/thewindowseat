@@ -29,8 +29,8 @@ export default function Home() {
             className="relative flex flex-col overflow-hidden rounded-frame border-[6px] border-paper bg-paper shadow-xl md:min-h-[64rem] md:border-[10px]"
             style={
               {
-                "--card": "clamp(112px, 10vw, 150px)",
-                "--arc": "clamp(210px, 29vw, 430px)",
+                "--card": "clamp(104px, 9vw, 132px)",
+                "--arc": "clamp(210px, 29vw, 434px)",
               } as React.CSSProperties
             }
           >
@@ -54,24 +54,25 @@ export default function Home() {
               <ExperienceArc />
 
               <div className="z-10 px-6 pb-10 pt-8 text-center md:absolute md:left-1/2 md:top-[64%] md:w-full md:max-w-2xl md:-translate-x-1/2 md:-translate-y-1/2 md:p-0">
-                <h1 className="animate-fade-up font-serif text-[clamp(2.5rem,7vw,5rem)] font-medium leading-[0.98] tracking-[-0.02em]">
+                <h1 className="animate-fade-up text-[clamp(2.25rem,4.75vw,4.5rem)] font-medium leading-[1.02] tracking-[-0.03em]">
                   The Window Seat
                 </h1>
+                {/* the tagline is a quotation, so it wears quotation marks */}
                 <p
-                  className="animate-fade-up mt-4 font-serif text-lg text-ink/80 sm:text-2xl"
+                  className="animate-fade-up mt-5 text-lg text-ink/80 sm:text-2xl"
                   style={{ animationDelay: "120ms" }}
                 >
-                  Be a traveller, not a tourist.
+                  &ldquo;Be a traveller, not a tourist.&rdquo;
                 </p>
                 <p
-                  className="animate-fade-up mx-auto mt-3 max-w-2xl font-serif text-sm leading-relaxed tracking-wide text-ink/60 sm:text-base"
+                  className="animate-fade-up mx-auto mt-2 max-w-2xl text-sm leading-relaxed tracking-wide text-ink/60 sm:text-base"
                   style={{ animationDelay: "220ms" }}
                 >
                   Created with stories by Marco Polo, Anthony Bourdain, and Xuanzang.
                 </p>
                 <Link
                   href="/quiz"
-                  className="animate-fade-up mt-8 inline-flex items-center gap-2 rounded-full bg-ink px-8 py-4 text-sm font-medium text-cream transition-transform hover:scale-[1.03]"
+                  className="animate-fade-up mt-10 inline-flex items-center gap-2 rounded-full bg-ink px-8 py-4 text-sm font-medium text-cream transition-transform hover:scale-[1.03]"
                   style={{ animationDelay: "320ms" }}
                 >
                   Find my three countries
@@ -90,7 +91,7 @@ export default function Home() {
                 [`${COUNTRIES.length} sourced essays`, "Every match links to the writing behind it."],
               ].map(([title, body], i) => (
                 <div key={title} className={i > 0 ? "sm:border-l sm:border-ink/10 sm:px-6" : "sm:px-6"}>
-                  <p className="font-serif text-lg font-medium sm:text-xl">{title}</p>
+                  <p className="text-lg font-medium sm:text-xl">{title}</p>
                   <p className="mx-auto mt-1.5 max-w-xs text-xs leading-relaxed text-ink/60 sm:text-sm">
                     {body}
                   </p>
@@ -109,7 +110,7 @@ export default function Home() {
 
           {/* sources note / footer */}
           <footer id="sources" className="mt-16 rounded-frame bg-ink px-6 py-14 text-center text-cream sm:mt-24 sm:px-12">
-            <h2 className="mx-auto max-w-2xl font-serif text-2xl font-medium sm:text-3xl">
+            <h2 className="mx-auto max-w-2xl text-2xl font-medium sm:text-3xl">
               Every lesson traces to a real essay by a real traveler.
             </h2>
             <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-cream/60">
