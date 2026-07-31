@@ -1,5 +1,13 @@
 import type { Metadata, Viewport } from "next";
+import localFont from "next/font/local";
 import "./globals.css";
+
+/* Display face for the intro poster, from the Claude Design project. */
+const entuista = localFont({
+  src: "./fonts/Entuista-Regular.otf",
+  variable: "--font-entuista",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "The Window Seat",
@@ -13,7 +21,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className={entuista.variable}>
       <body>{children}</body>
     </html>
   );
