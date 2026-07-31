@@ -1,6 +1,5 @@
 import Link from "next/link";
 import PlaneIntro from "@/components/PlaneIntro";
-import Masks from "@/components/Masks";
 import Wonders from "@/components/Wonders";
 import ExperienceArc, { ExperienceStrip } from "@/components/ExperienceArc";
 import MaskAtlas from "@/components/MaskAtlas";
@@ -41,7 +40,7 @@ export default function Home() {
             <header className="relative z-20 flex items-center justify-between px-5 py-5 sm:px-10">
               <Logo />
               <nav className="hidden items-center gap-8 text-sm text-ink/70 md:flex" aria-label="Primary">
-                <a href="#masks" className="transition-colors hover:text-ink">Masks</a>
+                <a href="#atlas" className="transition-colors hover:text-ink">Atlas</a>
                 <a href="#sources" className="transition-colors hover:text-ink">Sources</a>
               </nav>
               <Link
@@ -102,11 +101,6 @@ export default function Home() {
               ))}
             </div>
           </section>
-
-          {/* masks gateway */}
-          <div id="masks">
-            <Masks />
-          </div>
 
           {/* the mask atlas */}
           <MaskAtlas />
@@ -176,7 +170,7 @@ export default function Home() {
                 target="_blank"
                 rel="noreferrer"
               >
-                John Cary, A New Chart of the World, 1801
+                world map
               </a>{" "}
               (public domain).
             </p>
