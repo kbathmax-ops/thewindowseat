@@ -5,18 +5,13 @@ import { useEffect, useRef, useState } from "react";
 import { MASK_ATLAS, TRAVELLERS, type MaskEntry } from "@/lib/masks";
 
 /**
- * A current political world map on the equirectangular projection, which is
- * linear in both axes — a coordinate converts straight to a percentage with
- * nothing to calibrate. The scan keeps the full 180°W–180°E but is cropped to
- * the latitude band below, since the empty Arctic and Antarctic held no pins.
+ * The map is equirectangular at a true 2:1 — a full 180°W–180°E by 90°N–90°S on
+ * Greenwich — so both axes are linear and no projection maths is needed.
  */
-const LAT_TOP = 72;
-const LAT_BOTTOM = -60;
-
 function position(entry: MaskEntry) {
   return {
     left: `${((entry.lon + 180) / 360) * 100}%`,
-    top: `${((LAT_TOP - entry.lat) / (LAT_TOP - LAT_BOTTOM)) * 100}%`,
+    top: `${((90 - entry.lat) / 180) * 100}%`,
   };
 }
 
@@ -49,7 +44,7 @@ export default function MaskAtlas() {
   const active = MASK_ATLAS.find((m) => m.slug === open) ?? null;
 
   return (
-    <section id="atlas" aria-labelledby="atlas-heading" className="mx-auto max-w-6xl px-4 py-16 sm:py-24">
+    <section aria-labelledby="atlas-heading" className="mx-auto max-w-6xl px-4 py-16 sm:py-24">
       <div className="mb-10 text-center">
         <p className="mb-3 text-xs uppercase tracking-[0.3em] text-warmstone">The atlas</p>
         <h2 id="atlas-heading" className="text-3xl font-medium sm:text-4xl">
@@ -73,14 +68,13 @@ export default function MaskAtlas() {
             transition: "transform 1.5s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.8s ease",
           }}
         >
-          <div className="relative aspect-[2400/880] w-full bg-[#dbe9f4]">
+          <div className="relative aspect-[2/1] w-full">
             <Image
               src="/map/world-2026.png"
-              alt="A world map on the equirectangular projection with current borders"
+              alt="A present-day political map of the world"
               fill
               sizes="(max-width: 768px) 100vw, 1100px"
               className="object-cover"
-              style={{ filter: "saturate(0.6) sepia(0.14)" }}
             />
 
             {/* the pins */}

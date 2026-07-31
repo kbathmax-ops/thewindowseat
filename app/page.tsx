@@ -40,7 +40,7 @@ export default function Home() {
             <header className="relative z-20 flex items-center justify-between px-5 py-5 sm:px-10">
               <Logo />
               <nav className="hidden items-center gap-8 text-sm text-ink/70 md:flex" aria-label="Primary">
-                <a href="#atlas" className="transition-colors hover:text-ink">Atlas</a>
+                <a href="#masks" className="transition-colors hover:text-ink">Masks</a>
                 <a href="#sources" className="transition-colors hover:text-ink">Sources</a>
               </nav>
               <Link
@@ -103,7 +103,9 @@ export default function Home() {
           </section>
 
           {/* the mask atlas */}
-          <MaskAtlas />
+          <div id="masks">
+            <MaskAtlas />
+          </div>
 
           {/* seven wonders band */}
           <Wonders />
@@ -170,9 +172,9 @@ export default function Home() {
                 target="_blank"
                 rel="noreferrer"
               >
-                world map
+                {MAP_CREDIT.title.replace(/^File:|\.svg$/g, "")}
               </a>{" "}
-              (public domain).
+              ({MAP_CREDIT.license.toLowerCase()}).
             </p>
           </footer>
         </main>
