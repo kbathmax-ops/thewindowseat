@@ -71,7 +71,7 @@ export default function QuizFlow() {
         key={step}
         className={`flex-1 transition-all duration-300 ${leaving ? "-translate-x-4 opacity-0" : "animate-fade-up"}`}
       >
-        <h1 className="mb-8 font-serif text-3xl font-medium leading-tight sm:text-4xl">{question.prompt}</h1>
+        <h1 className="mb-8 text-3xl font-medium leading-tight sm:text-4xl">{question.prompt}</h1>
         <div className="flex flex-col gap-3" role="group" aria-label="Answers">
           {question.options.map((option, i) => {
             const selected = answers[step] === i;

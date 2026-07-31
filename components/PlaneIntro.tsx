@@ -210,7 +210,7 @@ export default function PlaneIntro() {
         }`}
       >
         <h1
-          className="animate-rise font-serif text-[clamp(3rem,11vw,7.5rem)] font-medium leading-[0.94] tracking-[-0.02em] text-cream"
+          className="animate-rise text-[clamp(3rem,11vw,7.5rem)] font-medium leading-[0.94] tracking-[-0.02em] text-cream"
           style={{ textShadow: "0 8px 40px rgba(0,0,0,0.55)" }}
         >
           The Window
@@ -220,7 +220,7 @@ export default function PlaneIntro() {
 
         <button
           onClick={board}
-          className="animate-rise group mt-8 font-serif text-2xl text-[#f0c886] transition-colors hover:text-cream sm:text-3xl"
+          className="animate-rise group mt-8 text-2xl text-[#f0c886] transition-colors hover:text-cream sm:text-3xl"
           style={{ animationDelay: "700ms" }}
         >
           Take off
@@ -228,16 +228,16 @@ export default function PlaneIntro() {
         </button>
 
         <p
-          className="animate-rise mt-10 max-w-2xl font-serif text-sm leading-relaxed tracking-wide text-[#b7ac93] sm:text-base"
+          className="animate-rise mt-10 max-w-2xl text-sm leading-relaxed tracking-wide text-[#b7ac93] sm:text-base"
           style={{ animationDelay: "1100ms" }}
         >
           Created with stories by Marco Polo, Anthony Bourdain, and Xuanzang.
         </p>
         <p
-          className="animate-rise mt-2 font-serif text-base text-[#d6c8a6] sm:text-lg"
+          className="animate-rise mt-2 text-base text-[#d6c8a6] sm:text-lg"
           style={{ animationDelay: "1400ms" }}
         >
-          Be a traveller, not a tourist.
+          &ldquo;Be a traveller, not a tourist.&rdquo;
         </p>
       </div>
 
