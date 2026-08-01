@@ -22,7 +22,7 @@ function Card({ exp, index }: { exp: (typeof HERO_EXPERIENCES)[number]; index: n
           priority={index > 2 && index < 7}
         />
       </div>
-      <figcaption className="mt-2.5 px-1 text-center font-sans text-[0.62rem] leading-snug text-ink/70 sm:text-[0.68rem]">
+      <figcaption className="mt-2.5 px-1 text-center font-sans text-[0.62rem] font-bold leading-snug text-ink/70 sm:text-[0.68rem]">
         {exp.caption}
         <span className="mt-0.5 block text-ink/40">{exp.country}</span>
       </figcaption>
