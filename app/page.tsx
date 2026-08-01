@@ -33,7 +33,7 @@ export default function Home() {
             style={
               {
                 "--card": "clamp(104px, 9vw, 132px)",
-                "--arc": "clamp(210px, 29vw, 434px)",
+                "--arc": "clamp(232px, 33vw, 496px)",
               } as React.CSSProperties
             }
           >
@@ -62,13 +62,13 @@ export default function Home() {
                 </h1>
                 {/* the tagline is a quotation, so it wears quotation marks */}
                 <p
-                  className="animate-fade-up mt-5 text-lg text-ink/80 sm:text-2xl"
+                  className="animate-fade-up mt-5 text-lg font-bold text-ink/80 sm:text-2xl"
                   style={{ animationDelay: "120ms" }}
                 >
                   &ldquo;Be a traveller, not a tourist.&rdquo;
                 </p>
                 <p
-                  className="animate-fade-up mx-auto mt-2 max-w-2xl text-sm leading-relaxed tracking-wide text-ink/60 sm:text-base"
+                  className="animate-fade-up mx-auto mt-2 max-w-2xl text-sm font-bold leading-relaxed tracking-wide text-ink/60 sm:text-base"
                   style={{ animationDelay: "220ms" }}
                 >
                   Created with stories by Marco Polo, Anthony Bourdain, and Xuanzang.
@@ -86,21 +86,6 @@ export default function Home() {
               </div>
             </div>
 
-            {/* the three facts, below the fan */}
-            <div className="relative z-10 grid gap-6 border-t border-ink/10 bg-paper/85 px-6 py-8 text-center backdrop-blur sm:grid-cols-3 sm:gap-0 sm:px-12">
-              {[
-                ["Six questions", "One at a time, about two minutes."],
-                ["Three countries", "Each with the lesson it tends to teach."],
-                [`${COUNTRIES.length} sourced essays`, "Every match links to the writing behind it."],
-              ].map(([title, body], i) => (
-                <div key={title} className={i > 0 ? "sm:border-l sm:border-ink/10 sm:px-6" : "sm:px-6"}>
-                  <p className="text-lg font-medium sm:text-xl">{title}</p>
-                  <p className="mx-auto mt-1.5 max-w-xs text-xs leading-relaxed text-ink/60 sm:text-sm">
-                    {body}
-                  </p>
-                </div>
-              ))}
-            </div>
           </section>
 
           {/* the mask atlas */}
