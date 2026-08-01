@@ -1,5 +1,5 @@
 import Link from "next/link";
-import PlaneIntro from "@/components/PlaneIntro";
+import IntroPoster from "@/components/IntroPoster";
 import Wonders from "@/components/Wonders";
 import ExperienceArc, { ExperienceStrip } from "@/components/ExperienceArc";
 import MaskAtlas from "@/components/MaskAtlas";
@@ -7,6 +7,7 @@ import { COUNTRIES } from "@/lib/data";
 import { PHOTO_CREDITS } from "@/lib/experiences";
 import MASK_CREDITS from "@/public/masks/credits.json";
 import MAP_CREDIT from "@/public/map/credits.json";
+import INTRO_CREDIT from "@/public/intro/credits.json";
 
 function Logo() {
   return (
@@ -23,7 +24,7 @@ function Logo() {
 export default function Home() {
   return (
     <>
-      <PlaneIntro />
+      <IntroPoster />
       <div className="p-3 sm:p-5">
         <main className="mx-auto max-w-7xl">
           {/* hero — ten experiences fanned around the title */}
@@ -165,7 +166,17 @@ export default function Home() {
                   ({credit.license})
                 </span>
               ))}
-              . Map: {MAP_CREDIT.title}, {MAP_CREDIT.author.toLowerCase()}.
+              . Map: {MAP_CREDIT.title}, {MAP_CREDIT.author.toLowerCase()}. Intro
+              photograph:{" "}
+              <a
+                href={INTRO_CREDIT.sourceUrl}
+                className="underline decoration-cream/20 underline-offset-2 transition-colors hover:text-cream/60"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Hiram Bingham, Peruvian Expedition of 1912
+              </a>{" "}
+              (public domain).
             </p>
           </footer>
         </main>
