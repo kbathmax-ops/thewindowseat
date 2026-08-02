@@ -56,7 +56,7 @@ export const MASK_ATLAS: MaskEntry[] = [
     origin:
       "Barong is the lion-like protector of Balinese Hindu belief, danced against the witch Rangda at temple ceremonies across the island.",
     relation:
-      "It appears at exactly the ceremonies a visitor is asked to sit quietly at the edge of — the mask is the thing you came to watch.",
+      "It appears at exactly the ceremonies a visitor is asked to sit quietly at the edge of. The mask is the thing you came to watch.",
     experience: "Observe a Balinese temple ceremony as a quiet guest",
     source: "https://en.wikipedia.org/wiki/Barong_(mythology)",
   },
@@ -72,7 +72,7 @@ export const MASK_ATLAS: MaskEntry[] = [
     origin:
       "Tsam is the masked Buddhist dance carried into Mongolia from Tibet, in which monks put on protector deities such as Begtse and take them through the monastery courtyard.",
     relation:
-      "It belongs to the same open steppe where a ger goes up, comes down and moves on — everything here is built to be carried.",
+      "It belongs to the same open steppe where a ger goes up, comes down and moves on, because everything here is built to be carried.",
     experience: "Sleep in a family ger on the open steppe",
     source: "https://en.wikipedia.org/wiki/Cham_dance",
   },
@@ -104,7 +104,7 @@ export const MASK_ATLAS: MaskEntry[] = [
     origin:
       "Boujloud is an Amazigh masquerade in which a man wrapped in fresh goatskins runs through the streets in the days after Eid al-Adha.",
     relation:
-      "It is a few days of licensed disorder, which is roughly the footing a stranger is on inside a medina — go slowly and let it stay confusing.",
+      "It is a few days of licensed disorder, roughly the footing a stranger is on inside a medina. Go slowly and let it stay confusing.",
     experience: "Get lost in the Fez medina without a map",
     source: "https://en.wikipedia.org/wiki/Boujloud",
   },
@@ -120,7 +120,7 @@ export const MASK_ATLAS: MaskEntry[] = [
     origin:
       "Mapiko are helmet masks carved by the Makonde of the Ruvuma river country and worn in the dances that close a young person's initiation.",
     relation:
-      "The dance is a lesson delivered in public, which is how the language gets learned here too — badly at first, in front of everybody.",
+      "The dance is a lesson delivered in public, which is how the language gets learned here too, badly at first and in front of everybody.",
     experience: "Learn Swahili greetings from your neighbors, badly, then better",
     source: "https://en.wikipedia.org/wiki/Makonde_people",
   },
@@ -136,7 +136,7 @@ export const MASK_ATLAS: MaskEntry[] = [
     origin:
       "A turquoise mosaic mask built over a human skull, made by Mixtec or Nahua craftsmen before the Spanish arrived and associated with the god Tezcatlipoca.",
     relation:
-      "It was made for a city arranged around a ceremonial square — the ancestor of the zócalo you can still sit in for a whole evening.",
+      "It was made for a city arranged around a ceremonial square, the ancestor of the zócalo you can still sit in for a whole evening.",
     experience: "Sit in a zócalo through an entire evening",
     source: "https://en.wikipedia.org/wiki/Turquoise_mosaics_of_Mesoamerica",
   },
@@ -168,7 +168,7 @@ export const MASK_ATLAS: MaskEntry[] = [
     origin:
       "Venice's carnival masks let rank disappear in public for a season, a licence the republic regulated by law for centuries.",
     relation:
-      "Both the carnival and the passeggiata treat the street as the room where everyone is seen — one of them just leaves the face on.",
+      "Both the carnival and the passeggiata treat the street as the room where everyone is seen. One of them just leaves the face on.",
     experience: "Take the passeggiata with the whole town at golden hour",
     source: "https://en.wikipedia.org/wiki/Carnival_of_Venice",
   },
@@ -184,7 +184,7 @@ export const MASK_ATLAS: MaskEntry[] = [
     origin:
       "The Baining of East New Britain build tall barkcloth masks for a night dance in which men step through and over an open fire.",
     relation:
-      "The Baining live an island and a mountain range away from the highlands clans — here the next village is a different world, which is why so much of the travelling is done by boat.",
+      "The Baining live an island and a mountain range away from the highlands clans. Here the next village is a different world, which is why so much of the travelling is done by boat.",
     experience: "Travel by banana boat between coastal villages",
     source: "https://en.wikipedia.org/wiki/Baining_people",
   },
@@ -207,7 +207,7 @@ export const TRAVELLERS: Traveller[] = [
     dates: "1254–1324",
     bio: "A Venetian merchant who spent twenty-four years on the roads between Venice and the court of Kublai Khan, and dictated the account of it from a Genoese prison cell. His book promises to set down things seen as seen and things heard as heard only, which is the oldest sourcing rule this project follows.",
     experience: "Sail the Nile on a felucca at dusk",
-    where: "Polo's route ran on trade water like this the whole way east.",
+    where: "Polo went east by water like this for much of the way.",
   },
   {
     name: "Xuanzang",
@@ -219,7 +219,7 @@ export const TRAVELLERS: Traveller[] = [
   {
     name: "Anthony Bourdain",
     dates: "1956–2018",
-    bio: "A New York cook who became the most honest traveller on television by eating what he was given and letting the people feeding him do the talking. His argument was simply to move — across an ocean or across a river — because eating someone's food is the shortest way into their life.",
+    bio: "A New York cook who made his television out of eating what he was given and letting the people feeding him do the talking. His argument was simply to move, across an ocean or across a river, because eating someone's food is the shortest way into their life.",
     experience: "Pull up a plastic stool for street-side phở at dawn",
     where: "Hanoi's low plastic stools were his clearest argument, made at one.",
   },
