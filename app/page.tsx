@@ -57,7 +57,7 @@ export default function Home() {
               <ExperienceArc />
 
               <div className="z-10 px-6 pb-10 pt-8 text-center md:absolute md:left-1/2 md:top-[64%] md:w-full md:max-w-2xl md:-translate-x-1/2 md:-translate-y-1/2 md:p-0">
-                <h1 className="animate-fade-up text-[clamp(2.25rem,4.75vw,4.5rem)] font-medium leading-[1.02] tracking-[-0.03em]">
+                <h1 className="animate-fade-up font-display text-[clamp(2.5rem,7.5vw,6.5rem)] font-normal leading-[1.02] tracking-[-0.01em]">
                   The Window Seat
                 </h1>
                 {/* the tagline is a quotation, so it wears quotation marks */}
