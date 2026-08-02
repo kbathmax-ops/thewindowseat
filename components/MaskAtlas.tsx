@@ -59,7 +59,7 @@ export default function MaskAtlas() {
     <section aria-labelledby="atlas-heading" className="mx-auto max-w-6xl px-4 py-16 sm:py-24">
       <div className="mb-10 text-center">
         <p className="mb-3 text-xs uppercase tracking-[0.3em] text-warmstone">The atlas</p>
-        <h2 id="atlas-heading" className="text-3xl font-medium sm:text-4xl">
+        <h2 id="atlas-heading" className="font-display text-3xl font-normal sm:text-4xl">
           Ten masks, ten experiences
         </h2>
         <p className="mx-auto mt-3 max-w-2xl text-warmstone">
